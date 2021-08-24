@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+/*--generic design--*/
+:root{
+	--bg-color-1: #23347B;
+	--bg-color-2: #E34A4D;
+	--bg-color-3: #DFECFF;
+	--bg-color-4: #112169;
+	--font-primary: #fff;
+	--font-secondary: #706F75;
+	--font-tertiary: #01122D;
+}
+body{
+	font-family: 'Alegreya', serif;
+	line-height: 1.5;
+}
+html{
+	font-size: 16px;
+}
+.font-0{
+	height: 0;
+}
+.full-width{
+	width: 100%;
+}
+.container{
+	max-width: 1380px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 1rem;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-10{
+	flex: 0 1 10%;
+}
+.flex-15{
+	flex: 0 1 15%;
+}
+.flex-25{
+	flex: 0 1 25%;
+}
+.flex-30{
+	flex: 0 1 30%;
+}
+.flex-40{
+	flex: 0 1 40%;
+}
+.flex-50{
+	flex: 0 1 50%;
+}
+.flex-60{
+	flex: 0 1 60%;
+}
+button{
+	padding: .75rem 1.5rem;
+	background-color: var(--bg-color-2);
+	border-radius: 4px;
+	border: 0;
+}
+button a{
+	text-decoration: none;
+	color: var(--font-primary);
+}
+.col{
+	color: var(--bg-color-2);
+}
+h2{
+	font-size: 2.5rem;
+	color: var(--font-primary);
+	font-weight: 800;
+	width: 50%;
+}
+/*--header---*/
+.header{
+	background: linear-gradient(rgba(59, 59, 167, .7), rgba(59, 59, 167, .7)), url(../media/banner.png) no-repeat;
+	background-size: cover;
+	padding: 2rem 0;
+}
+.header .navbar{
+	margin-bottom: 2rem;
+}
+.header .brand a{
+	text-decoration: none;
+	color: var(--font-primary);
+	font-size: 2rem;
+}
+.header li{
+	margin-right: 1.5rem;
+	font-size: 1.25rem;
+}
+.header li a{
+	color: var(--font-primary);
+	text-decoration: none;
+}
+.header p{
+	color: var(--font-primary);
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+.hero a{
+	font-size: 1.5rem;
+}
+/*-----About------*/
+.about{
+	margin: 3rem auto;
+}
+.about h2{
+	color: var(--font-tertiary);
+	width: 100%;
+}
+.about p{
+	color: var(--font-secondary);
+	font-size: 1.24rem;
+	margin: 2rem 0;
+}
+.about a{
+	font-size: 1.5rem;
+}
+/*-----Service-----*/
+h3{
+	color: var(--font-tertiary);
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+.service{
+	background: var(--bg-color-3);
+	padding: 2rem 0;
+}
+h4{
+	font-size: 2rem;
+	color: var(--font-tertiary);
+	font-weight: 700;
+}
+.service p{
+	font-size: 1.25rem;
+	color: var(--font-secondary);
+	font-weight: 500;
+}
+.service .article{
+	border: dashed 2px var(--bg-color-2);
+	padding: .5rem;
+	position: relative;
+}
+.service .col{
+	position: absolute;
+	left: 1.5rem;
+	top: -1.75rem;
+}
+/*-----Schedule------*/
+.schedule{
+	margin: 2rem auto;
+	flex-direction: column;
+}
+.schedule .wrapper{
+	height: 90vh;
+}
+.schedule .date{
+	flex-direction: column;
+	height: 100%;
+}
+.schedule .media{
+	flex-direction: column;
+	height: 100%;
+}
+.schedule .content{
+	flex-direction: column;
+	height: 90%;
+}
+.schedule .circle{
+	height: 10rem;
+	width: 10rem;
+	border: dashed 2px var(--bg-color-2);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.schedule .circle .content{
+	height: auto;
+}
+.schedule .circle p{
+	font-size: 1.5rem;
+	color: var(--bg-color-2);
+	font-weight: 800;
+	text-align: center;
+}
+.color{
+	background: var(--bg-color-2);
+	border: 0;
+}
+.color .content{
+	color: #fff;
+}
+
+.schedule .dash{
+	flex-grow: 1;
+	border-right: dashed  2px var(--bg-color-2);
+}
+.img-container, 
+.content-wrapper{
+	height: 8rem;
+}
+.schedule img{
+	border-radius: 5px;
+}
+h5{
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--font-tertiary);
+	margin-bottom:2rem;
+	margin-top: 0;
+}
+.schedule button{
+	margin: 2rem 0;
+}
+/*-----Highlight-----*/
+.highlight{
+	padding: 3rem 0;
+	background: var(--bg-color-3);
+}
+.highlight .container{
+	justify-content: center;
+}
+.highlight .wrapper{
+	width: 80%;
+}
+.highlight .article{
+	text-align: center;
+	padding: 1.5rem 0;
+	border-radius: 5px;
+}
+.color h5{
+	color: var(--font-primary);
+}
+.color p{
+	color: var(--font-primary);
+}
+/*-----Video-----*/
+.video{
+	background: url(../media/banner.png);
+	min-height: 80vh;
+	margin: 2rem auto;
+	background-size: cover;
+	border-radius: 1rem;
+	justify-content: center;
+}
+.video .circle{
+	padding: 1.5rem;
+	background: var(--font-primary);
+	display: inline-block;
+	border-radius: 50%;
+}
+.fas{
+	font-size: 2rem;
+}
+/*-----news-----*/
+.news{
+	background: var(--bg-color-3);
+	padding: 2rem 0;
+}
+h6{
+	font-size: 1.5rem;
+	color: var(--font-tertiary);
+	font-weight: 700;
+	margin: 1rem 0;
+}
+.news p{
+	color: var(--font-secondary);
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.news button{
+	text-decoration: underline;
+	background-color: var(--bg-color-3);
+	padding: 0;
+	font-size: 1.5rem;
+	margin: 2rem 0;
+}
+.colour{
+	color: var(--bg-color-2);
+}
+.blue{
+	color: var(--font-tertiary);
+}
+/*-----Quick-links-----*/
+.links{
+	background: var(--bg-color-1);
+	padding: 2rem 0;
+}
+.links h6{
+	color: var(--font-primary);
+}
+.links .wrapper{
+	justify-content: flex-start;
+}
+.quick-link{
+	margin-right: 2rem;
+}
+.quick-link li{
+	margin-right: 1.5rem;);
+}
+.quick-link a{
+	color: var(--font-secondary);
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+.follow i{
+	color: var(--font-secondary);
+	font-size: 1.5rem;
+	margin-right: 1.5rem;
+}
+/*-----Footer-----*/
+.footer{
+	background: var(--bg-color-4);
+	padding: 1rem 0;
+}
+.footer p{
+	text-align: center;
+	color: var(--font-secondary);
+	font-weight: 600;
+}
